@@ -1,0 +1,23 @@
+{
+  "name": "prac",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.1.0",
+    "bxslider": "*",
+    "bootstrap": "^3.3.7"
+  },
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "bxslider": "*"
+  }
+}
