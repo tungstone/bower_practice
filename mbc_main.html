@@ -1,0 +1,577 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>MBC 프로그램 정보通</title>
+<link rel="stylesheet" type="text/css" href="css/mbc.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/mbc.js"></script>
+</head>
+<body>
+<!-- skip nav -->
+<div id="skip_nav"><a href="#content">본문 바로가기</a></div>
+<!-- //skip nav -->
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+		<div class="gnb">
+			<h1 class="head_logo"><a href="#"><strong class="blind">mbc와 함께</strong></a></h1>
+			<ul class="lst_type">
+				<li class="li_type"><a href="#" class="blind">로그인</a></li>
+				<li class="li_type2"><a href="#" class="blind">MBC</a></li>
+				<li class="li_type3"><a href="#" class="blind">뉴스</a></li>
+				<li class="li_type4"><a href="#" class="blind">TV</a></li>
+				<li class="li_type5"><a href="#" class="blind">라디오</a></li>
+				<li class="li_type6"><a href="#" class="blind">사이트맵</a></li>
+				<li class= "li_type7">
+					<a href="#" class="blind">더보기</a>
+					<div class="gnb_more">
+						<ul class="gnb_more_lst">
+							<li class="more_li">
+								<dl>
+									<dt>MBC소개</dt>
+								<dd>
+									<a href="#">회사소개</a>
+									<a href="#">채용</a>
+									<a href="#">아나운서</a>
+									<a href="#">프로그램 정보통</a>
+									<a href="#">클린센터</a>
+									<a href="#">방송과커뮤니케이션</a>
+								</dd>
+								</dl>
+							</li>
+							<li class="more_li more_li2">
+								<dl>
+									<dt>시청자와 함께</dt>
+								<dd>
+									<a href="#">시청자 센터</a>
+									<a href="#">사회공헌</a>
+									<a href="#">문화동산</a>
+									<a href="#">용인 대장금 파크</a>
+									<a href="#">MBC WORLD</a>
+									<a href="#">MBC MALL</a>
+								</dd>
+								</dl>
+							</li>
+							<li class="more_li more_li3">
+								<dl>
+									<dt>콘텐츠 제작/판매</dt>
+								<dd>
+									<a href="#">글로벌 미디어</a>
+									<a href="#">협찬 및 간접광고 안내</a>
+									<a href="#">외주제작</a>
+									<a href="#">영상자료구입</a>
+									<a href="#">심의정보 시스템</a>
+									<a href="#">MBC Tshop</a>
+								</dd>
+								</dl>
+							</li>
+							<li class="more_li more_li4">
+								<dl>
+									<dt>방송기술</dt>
+								<dd>
+									<a href="#">DMB</a>
+									<a href="#">방송기술 HDMBC</a>
+									<a href="#">MBC SKY</a>
+									<a href="#">DMB Drive</a>
+								</dd>
+								</dl>
+							</li>
+						</ul>
+						<div class="close">
+							<button type="submit">닫기</button>
+						</div>
+					</div>
+					</li>
+				</ul>
+		</div>
+		<div class="info">
+			<h1 class="head_logo"><a href="#"><strong class="blind">mbc 프로그램 정보通</strong></a></h1>
+			<div class="info_area">
+				<div class="sch">
+					<form action="#">
+						<fieldset>
+							<legend class="blind">Legend</legend>
+							<input type="text" class="sch_inp">
+							<button type="submit" class="btn_type">검색</button>
+						</fieldset>
+					</form>
+				</div>
+			<div class="interest">
+				<span>인기검색어</span>
+				<a href="#">기황후기황후후후후후후후후후후후후후후</a>
+				<ol class="interest_lst">
+					<li><a href="#">기황후기황후후후후후후후후후후후후후후</a></li>
+					<li><a href="#">기황후기황후후후후후후후후후후후후후후</a></li>
+					<li><a href="#">기황후기황후후후후후후후후후후후후후후</a></li>
+					<li><a href="#">기황후기황후후후후후후후후후후후후후후</a></li>
+					<li><a href="#">기황후기황후후후후후후후후후후후후후후</a></li>
+					<li><a href="#">기황후기황후후후후후후후후후후후후후후</a></li>
+					<li><a href="#">기황후기황후후후후후후후후후후후후후후</a></li>
+					<li><a href="#">기황후기황후후후후후후후후후후후후후후</a></li>
+					<li><a href="#">기황후기황후후후후후후후후후후후후후후</a></li>
+					<li><a href="#">기황후기황후후후후후후후후후후후후후후</a></li>
+				</ol>
+			</div>
+			<div class="tv_info">
+				<a href="#">
+				<span class="blind">TV편성표</span>
+				</a>
+			</div>
+			</div>
+		</div>
+		<div class="lnb">
+			<ul class="lst_type2">
+			<li class="li_type"><a href="#">프로그램 소식</a></li>
+			<li class="li_type2"><a href="#">프로그램 사진</a></li>
+			<li class="li_type3"><a href="#">하이라이트</a></li>
+			<li class="li_type4"><a href="#">인터뷰</a></li>
+			<li class="li_type5"><a href="#">공지사항</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- //header -->
+	<!-- container -->
+	<div id="container">
+		<!-- content -->
+		<div id="content">
+			<div class="high_review">
+				<div class="highlight">
+					<h2>
+						<span class="high_text">하이라이트</span>
+					</h2>
+					<span class="high_date"><a href="#">2014/02/07 (수)</a></span>
+					<ul class="high_lst on">
+						<li><a href="#">아침드라마 [내손을 잡아]</a></li>
+						<li><a href="#">TV 속의 TV</a></li>
+						<li><a href="#">일일연속극 [빛나는 로맨스]</a></li>
+						<li><a href="#">특별기획[제왕의딸, 수백향][제왕의딸, 수백향]</a></li>
+						<li><a href="#">월화특별기획 [기황후]</a></li>
+					</ul>
+					<span class="high_date"><a href="#">2014/02/06 (화)</a></span>
+					<ul class="high_lst">
+						<li><a href="#">TV 속의 TV</a></li>
+						<li><a href="#">아침드라마 [내손을 잡아]</a></li>
+						<li><a href="#">일일연속극 [빛나는 로맨스]</a></li>
+						<li><a href="#">특별기획[제왕의딸, 수백향].......</a></li>
+						<li><a href="#">월화특별기획 [기황후]</a></li>
+					</ul>
+					<span class="high_date"><a href="#">2014/02/05 (월)</a></span>
+					<ul class="high_lst">
+						<li><a href="#">일일연속극 [빛나는 로맨스]</a></li>
+						<li><a href="#">TV 속의 TV</a></li>
+						<li><a href="#">아침드라마 [내손을 잡아]</a></li>
+						<li><a href="#">특별기획[제왕의딸, 수백향].......</a></li>
+						<li><a href="#">월화특별기획 [기황후]</a></li>
+					</ul>
+				</div>
+				<div class="review">
+					<h2>
+						<span class="review_text">다시보기</span>
+					</h2>
+					<ol class="review_date">
+						<li class="date_li on"><a href="#">오늘</a>
+							<ol class="review_lst">
+								<li class="review_li">
+									<a href="#" class="review_tit">무한도전</a>
+									<a href="#" class="num_date">
+										<span class="sp_num">354회</span>
+										<span class="sp_date">2013/11/09 (토)</span>
+									</a>
+								</li>
+								<li class="review_li2">
+									<a href="#" class="review_tit">무한도전</a>
+									<a href="#" class="num_date">
+										<span class="sp_num">354회</span>
+										<span class="sp_date">2013-11-02(토)</span>
+									</a>
+								</li>
+								<li class="review_li3">
+									<a href="#" class="review_tit">PD수첩</a>
+									<a href="#" class="num_date">
+										<span class="sp_num">354회</span>
+										<span class="sp_date">2013-10-25(토)</span>
+									</a>
+								</li>
+								<li class="review_li4">
+									<a href="#" class="review_tit">PD수첩</a>
+									<a href="#" class="num_date">
+										<span class="sp_num">354회</span>
+										<span class="sp_date">2013-10-25(토)</span>
+									</a>
+								</li>
+								<li class="review_li5">
+									<a href="#" class="review_tit">PD수첩</a>
+									<a href="#" class="num_date">
+										<span class="sp_num">354회</span>
+										<span class="sp_date">2013-10-25(토)</span>
+									</a>
+								</li>
+							</ol>
+						</li>
+						<li class="date_li date_li2"><a href="#">최근 7일</a>
+							<ol class="review_lst">
+								<li class="review_li">
+									<a href="#" class="review_tit">무모한도전</a>
+									<a href="#" class="num_date">
+										<span class="sp_num">354회</span>
+										<span class="sp_date">2013/11/09 (일)</span>
+									</a>
+								</li>
+								<li class="review_li2">
+									<a href="#" class="review_tit">무한도전</a>
+									<a href="#" class="num_date">
+										<span class="sp_num">354회</span>
+										<span class="sp_date">2013-11-02(일)</span>
+									</a>
+								</li>
+								<li class="review_li3">
+									<a href="#" class="review_tit">PD수첩</a>
+									<a href="#" class="num_date">
+										<span class="sp_num">354회</span>
+										<span class="sp_date">2013-10-25(일)</span>
+									</a>
+								</li>
+								<li class="review_li4">
+									<a href="#" class="review_tit">PD수첩</a>
+									<a href="#" class="num_date">
+										<span class="sp_num">354회</span>
+										<span class="sp_date">2013-10-25(일)</span>
+									</a>
+								</li>
+								<li class="review_li5">
+									<a href="#" class="review_tit">PD수첩</a>
+									<a href="#" class="num_date">
+										<span class="sp_num">354회</span>
+										<span class="sp_date">2013-10-25(일)</span>
+									</a>
+								</li>
+							</ol>
+						</li>
+						<li class="date_li date_li3"><a href="#">최근 30일</a>
+							<ol class="review_lst">
+								<li class="review_li">
+									<a href="#" class="review_tit">무모한애도전</a>
+									<a href="#" class="num_date">
+										<span class="sp_num">354회</span>
+										<span class="sp_date">2013/11/09 (월)</span>
+									</a>
+								</li>
+								<li class="review_li2">
+									<a href="#" class="review_tit">무한도전</a>
+									<a href="#" class="num_date">
+										<span class="sp_num">354회</span>
+										<span class="sp_date">2013-11-02(월)</span>
+									</a>
+								</li>
+								<li class="review_li3">
+									<a href="#" class="review_tit">PD수첩</a>
+									<a href="#" class="num_date">
+										<span class="sp_num">354회</span>
+										<span class="sp_date">2013-10-25(월)</span>
+									</a>
+								</li>
+								<li class="review_li4">
+									<a href="#" class="review_tit">PD수첩</a>
+									<a href="#" class="num_date">
+										<span class="sp_num">354회</span>
+										<span class="sp_date">2013-10-25(월)</span>
+									</a>
+								</li>
+								<li class="review_li5">
+									<a href="#" class="review_tit">PD수첩</a>
+									<a href="#" class="num_date">
+										<span class="sp_num">354회</span>
+										<span class="sp_date">2013-10-25(월)</span>
+									</a>
+								</li>
+							</ol>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<div class="photo_total">
+				<div class="photo">
+					<h2>
+						<span class="photo_text">포토갤러리</span>
+					</h2>
+					<ul class="photo_lst">
+						<li class="photo_li">
+							<a href="#">
+								<img src="img/photo1.png" width="214" height="142" alt="수목미니시리즈 [메디컬탑팀] 15회">
+								<span class="title">수목미니시리즈 [메디컬탑팀] 15회</span>
+								<span class="date">2013/10/15 (수)</span>
+							</a>
+						</li>
+						<li class="photo_li">
+							<a href="#">
+								<img src="img/photo2.png" width="214" height="142" alt="[ 드라마 ] 특별기획 [제왕의 딸, 수백향]">
+								<span class="title">[ 드라마 ] 특별기획 [제왕의 딸, 수백향]</span>
+								<span class="date">2013/10/14 (수)</span>
+							</a>
+						</li>
+						<li class="photo_li">
+							<a href="#">
+								<img src="img/photo3.png" width="214" height="142" alt="[ 드라마 ] 특별기획 [제왕의 딸, 수백향]">
+								<span class="title">[ 드라마 ] 특별기획 [제왕의 딸, 수백향]</span>
+								<span class="date">2013/10/13 (수)</span>
+							</a>
+						</li>
+					</ul>
+					<a href="#" class="more photo_more"><span class="blind">photo 더보기</span></a>
+				</div>
+				<div class="total">
+					<div class="news_inter">
+						<div class="total_v1">
+							<h2>PROGRAM NEWS</h2>
+							<ul class="news_lst">
+								<li class="news_li">
+									<span><strong class="blind">드라마</strong></span>
+									<a href="#">[2013 MBC 방송연예대상] 2013년을 [2013 MBC 방송연예대상] 2013년을 </a>
+								</li>
+								<li class="news_li news_li2">
+									<span><strong class="blind">라디오</strong></span>
+									<a href="#">[기황후] 속 코믹커플 지창욱-조재윤, 쉬는</a>
+								</li>
+								<li class="news_li news_li3">
+									<span><strong class="blind">시사교양</strong></span>
+									<a href="#">[미스코리아] 이선균-이연희, 모범생과 퀸카의</a>
+								</li>
+								<li class="news_li news_li4">
+									<span><strong class="blind">MBC 소식</strong></span>
+									<a href="#">개성강한 출연진들의 조합으로 주목받는 MBC</a>
+								</li>
+								<li class="news_li news_li5">
+									<span><strong class="blind">예능</strong></span>
+									<a href="#">MBC 새 예능 [글로벌 홈스테이 집으로] 1</a>
+								</li>
+							</ul>
+							<a href="#" class="more news_more"><span class="blind">program news 더보기</span></a>
+						</div>
+						<div class="total_v2">
+							<h2>INTERVIEW</h2>
+							<ul class="inter_lst">
+								<li class="inter_li">
+									<a href="#">
+										<img src="img/interview_photo1.png" width="86" height="59" alt="황금무지개 운명의 수레바귀가 연결 지어준 일곱난쟁이들아">
+										<span class="sp_tit2">황금무지개</span>
+										<span class="sp_cont">운명의 수레바퀴가 연결 지어준 일곱난쟁이들아</span>
+									</a>
+								</li>
+								<li class="inter_li inter_li2">
+									<a href="#">
+										<img src="img/interview_photo2.png" width="86" height="59" alt="황금무지개 운명의 수레바귀가 연결 지어준 일곱난쟁이들아2">
+										<span class="sp_tit2">황금무지개2</span>
+										<span class="sp_cont">운명의 수레바퀴가 연결 지어준 일곱난쟁이들아2</span>
+									</a>
+								</li>
+							</ul>
+							<a href="#" class="more inter_more"><span class="blind">interview 더보기</span></a>
+						</div>
+					</div>
+					<div class="now_noti">
+						<div class="total_v3">
+							<h2>PROGRAM NOW</h2>
+							<div class="now_cont">
+								<ul class="now_lst">
+									<li class="now_li">
+										<span class="now_tit"><a href="#">월,화 특별기획 &lt;기황후&gt;</a></span>
+										<span class="now_time">방송시간 : 매주 월~금 저녁 8시 55분</span>
+										<span class="now_poster">
+										<img src="img/now_photo.png" width="128" height="157" alt="월,화 특별기획 기황후">
+									</span>
+									</li>
+									<li class="now_li2">
+										<span class="now_tit"><a href="#">수목미니시리즈 &lt;메디컬 탑팀&gt;</a></span>
+										<span class="now_time">방송시간 : 매주 월~금 저녁 8시 55분</span>
+										<span class="now_poster2">
+										<img src="img/medical.jpg" width="128" height="157" alt="월,화 특별기획 기황후">
+									</span>
+									</li>
+									<li class="now_li3">
+										<span class="now_tit"><a href="#">MBC 특별기획 &lt;제왕의딸, 수&gt;</a></span>
+										<span class="now_time">방송시간 : 매주 월~금 저녁 8시 55분</span>
+										<span class="now_poster3">
+										<img src="img/soo.jpg" width="128" height="157" alt="월,화 특별기획 기황후">
+									</span>
+									</li>
+								</ul>
+							</div>
+							<a href="#" class="more now_more"><span class="blind">program now 더보기</span></a>
+						</div>
+						<div class="total_v4">
+							<h2>NOTICE</h2>
+							<ul class="noti_lst">
+								<li class="noti_li">
+									<span class="noti_tit"><a href="#">(초대) MBC 특별기획 [제왕의 딸, 수</a></span>
+									<span class="noti_date">2013/10/15 (수)</span>
+								</li>
+								<li class="noti_li">
+									<span class="noti_tit"><a href="#">(마감) MBC 주말특별기획 [스캔들 : </a></span>
+									<span class="noti_date">2013/10/15 (수)</span>
+								</li>
+								<li class="noti_li">
+									<span class="noti_tit"><a href="#">(마감) MBC 수목미니시리즈 [남자가</a></span>
+									<span class="noti_date">2013/10/15 (수)</span>
+								</li>
+								<li class="noti_li">
+									<span class="noti_tit"><a href="#">(초대) MBC 주말특별기획드라마 [백</a></span>
+									<span class="noti_date">2013/10/15 (수)</span>
+								</li>
+								<li class="noti_li">
+									<span class="noti_tit"><a href="#">(알림-취재기자 신청마감) MBC 2012</a></span>
+									<span class="noti_date">2013/10/15 (수)</span>
+								</li>
+							</ul>
+							<a href="#" class="more noti_more"><span class="blind">notice 더보기</span></a>
+						</div>
+					</div>
+					<span class="cupiter"><a href="#">큐피터 블로그</a></span>
+					<span class="twiter"><a href="#">홍보국 트위터 @MBCnest</a></span>
+				</div>
+			</div>
+		</div>
+		<!-- //content -->
+	</div>
+	<!-- //container -->
+	<!-- footer -->
+	<div id="footer">
+		<div class="ft_link">
+			<ul class="ft_lst">
+				<li class="with_mbc">
+					<a href="#" class="ft_lnk">MBC와 함께<span class="blind">열기</span></a>
+					<ul class="ft_lst2">
+						<li class="ft_li">
+							<dl>
+								<dt>MBC소개</dt>
+							<dd>
+								<a href="#">회사소개</a>
+								<a href="#">채용</a>
+								<a href="#">아나운서</a>
+								<a href="#">프로그램 정보통</a>
+								<a href="#">클린센터</a>
+								<a href="#">방송과커뮤니케이션</a>
+							</dd>
+							</dl>
+						</li>
+						<li class="ft_li ft_li2">
+							<dl>
+								<dt>시청자와 함께</dt>
+							<dd>
+								<a href="#">시청자 센터</a>
+								<a href="#">사회공헌</a>
+								<a href="#">문화동산</a>
+								<a href="#">용인 대장금 파크</a>
+								<a href="#">MBC WORLD</a>
+								<a href="#">MBC MALL</a>
+							</dd>
+							</dl>
+						</li>
+						<li class="ft_li ft_li3">
+							<dl>
+								<dt>콘텐츠 제작/판매</dt>
+							<dd>
+								<a href="#">글로벌 미디어</a>
+								<a href="#">협찬 및 간접광고 안내</a>
+								<a href="#">외주제작</a>
+								<a href="#">영상자료구입</a>
+								<a href="#">심의정보 시스템</a>
+								<a href="#">MBC Tshop</a>
+							</dd>
+							</dl>
+						</li>
+						<li class="ft_li ft_li4">
+							<dl>
+								<dt>방송기술</dt>
+							<dd>
+								<a href="#">DMB</a>
+								<a href="#">방송기술 HDMBC</a>
+								<a href="#">MBC SKY</a>
+								<a href="#">DMB Drive</a>
+							</dd>
+							</dl>
+						</li>
+					</ul>
+				</li>
+				<li class="coper">
+					<a href="#" class="ft_lnk2">계열사 및 자회사<span class="blind">열기</span></a>
+					<ul class="ft_lst3">
+						<li class="ft_li">
+							<dl>
+							<dd>
+								<a href="#">MBC 경남</a>
+								<a href="#">부산 MBC</a>
+								<a href="#">대구 MBC</a>
+								<a href="#">대전 MBC</a>
+								<a href="#">광주 MBC</a>
+								<a href="#">울산 MBC</a>
+								<a href="#">MBC 강원영동</a>
+							</dd>
+							</dl>
+						</li>
+						<li class="ft_li ft_li2">
+							<dl>
+							<dd>
+								<a href="#">전주 MBC</a>
+								<a href="#">제주 MBC</a>
+								<a href="#">춘천 MBC</a>
+								<a href="#">청주 MBC</a>
+								<a href="#">여수 MBC</a>
+								<a href="#">포항 MBC</a>
+								<a href="#">목포 MBC</a>
+							</dd>
+							</dl>
+						</li>
+						<li class="ft_li ft_li3">
+							<dl>
+							<dd>
+								<a href="#">안동 MBC</a>
+								<a href="#">원주 MBC</a>
+								<a href="#">충주 MBC</a>
+								<a href="#">MBC C&amp;I</a>
+								<a href="#">MBC 아카데미</a>
+								<a href="#">MBC 아트</a>
+							</dd>
+							</dl>
+						</li>
+						<li class="ft_li ft_li4">
+							<dl>
+							<dd>
+								<a href="#">iMBC</a>
+								<a href="#">MBC 플러스</a>
+								<a href="#">MBC AMERCA</a>
+								<a href="#">MBC PlayBe</a>
+								<a href="#">MBC 나눔</a>
+							</dd>
+							</dl>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="ft_addr">
+			<div class="logo_addr">
+				<span class="logo_mbc"><strong class="blind">mbc</strong></span>
+				<span class="logo_imbc"><strong class="blind">imbc</strong></span>
+				<address class="addr">
+					<span class="sp_addr">Copy &copy; Since 1996. MBC&amp; iMBC ALL Rigths Reserved</span>
+				</address>
+				<div class="sns_icon">
+					<ul>
+						<li><a href="#" class="icon_twiter"><strong class="blind">twiter</strong></a></li>
+						<li><a href="#" class="icon_facebook"><strong class="blind">facebook</strong></a></li>
+						<li><a href="#" class="icon_youtube"><strong class="blind">youtube</strong></a></li>
+						<li class="mtalk"><a href="#" class="icon_mtalk"><strong class="blind">mtalk</strong></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //footer -->
+</div>
+<!-- wrap -->
+</body>
+</html>
